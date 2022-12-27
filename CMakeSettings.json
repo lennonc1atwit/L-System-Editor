@@ -12,18 +12,22 @@
       "ctestCommandArgs": "",
       "variables": [
         {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "${projectDir}\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+        },
+        {
           "name": "imgui_DIR",
-          "value": "${projectDir}/vcpkg_installed/x64-windows/share/imgui",
+          "value": "${projectDir}\\vcpkg_installed\\x64-windows\\share\\imgui",
           "type": "PATH"
         },
         {
           "name": "imgui-SFML_DIR",
-          "value": "${projectDir}/vcpkg_installed/x64-windows/share/imGui-SFML",
+          "value": "${projectDir}\\vcpkg_installed\\x64-windows\\share\\imGui-SFML",
           "type": "PATH"
         },
         {
           "name": "SFML_DIR",
-          "value": "${projectDir}/vcpkg_installed/x64-windows/share/SFML",
+          "value": "${projectDir}\\vcpkg_installed\\x64-windows\\share\\SFML",
           "type": "PATH"
         }
       ]
@@ -40,18 +44,22 @@
       "ctestCommandArgs": "",
       "variables": [
         {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "${projectDir}\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+        },
+        {
           "name": "imgui_DIR",
-          "value": "${projectDir}/vcpkg_installed/x64-windows/share/imgui",
+          "value": "${projectDir}\\vcpkg_installed\\x64-windows\\share\\imgui",
           "type": "PATH"
         },
         {
           "name": "imgui-SFML_DIR",
-          "value": "${projectDir}/vcpkg_installed/x64-windows/share/imGui-SFML",
+          "value": "${projectDir}\\vcpkg_installed\\x64-windows\\share\\imGui-SFML",
           "type": "PATH"
         },
         {
           "name": "SFML_DIR",
-          "value": "${projectDir}/vcpkg_installed/x64-windows/share/SFML",
+          "value": "${projectDir}\\vcpkg_installed\\x64-windows\\share\\SFML",
           "type": "PATH"
         }
       ]

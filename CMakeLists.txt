@@ -39,6 +39,14 @@ if(NOT EXISTS "${PROJECT_SOURCE_DIR}/vcpkg")
     message(FATAL_ERROR "The submodules were not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
 
+if(NOT EXISTS "${PROJECT_SOURCE_DIR}/vcpkg/vcpkg.exe")
+    message(STATUS "vcpkg.exe not found, running bootstrap.")
+    execute_process(COMMAND ${PROJECT_SOURCE_DIR}/vcpkg/bootstrap-vcpkg.bat WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/vcpkg)
+endif()
+
+execute_process(COMMAND cd vcpkg)
+execute_process(COMMAND  .\\vcpkg install)
+
 find_package(imgui CONFIG REQUIRED)
 find_package(ImGui-SFML CONFIG REQUIRED)
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
